@@ -1,0 +1,42 @@
+{
+    "user" : {
+        "fullName": "Njabulo Ndlovu",
+        "photo" : "images/Webp.net-resizeimage_three.jpg"
+
+    },
+    "city" : {
+        "name" : "France, Paris",
+        "photo" :"images/Webp.net-resizeimage_one.jpg",
+        "description" : "The city I would love to visit is the capital city of France, Paris, which is known for its art museums and architectural landmarks such as the Eiffel Tower, which is the tallest structure in Paris."
+    },
+    "foreignLanguage" : {
+        "language" : "French",
+        "description" : "I would love to learn the foreign language French as it is the second most widely learned foreign language after English and regarded as one of the most romancised languages.",
+        "phrases" : [{
+            "englishPhrase" : " - Thank you ",
+            "foreignLanguage" : "Merci(pronounced as mair see)"
+        },
+        {
+            "englishPhrase" : " Good day, how are you?",
+            "foreignLanguage" : "Bonne journée, comment allez-vous"
+        },
+        {
+            "englishPhrase" : "Have a great day ",
+            "foreignLanguage" : "Passe une bonne journée"
+        }]
+    },
+    "favouriteSubjects" : [
+        {
+            "name" : "Information Portals",
+            "description" : "The study of portals as information platforms used to access and manage information better within large organization eg BlackBoard"
+        },
+        {
+            "name" : "SEO Optimization",
+            "description" : " Focused on the different techniques used towards website optimization withn search engines."
+        },
+        {
+            "name" : "Social Media Management",
+            "description" : "The study of social media content creation, engagement and management of different digital social media platforms."
+        }
+    ]
+}

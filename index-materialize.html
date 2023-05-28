@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<style>
+    body {
+    background-color: rgb(48, 3, 38);
+    padding: 20px;
+    font-family:var(--bs-font-sans-serif)
+     
+    }   
+   </style>
+
+<body>
+<div class="row">
+  <div class="container">
+    <div class="card-panel deep-purple darken-1">
+    <div class="col s12 m6">
+    <h1>{{user.fullName}}</h1>
+    <img src="{{user.photo}}" alt="User Photo" />
+  </div>
+    </div>
+     </div>
+    
+  <div class="container">
+    <div class="col s12">
+        <div class="card-panel deep-purple darken-1">
+    <h2>{{city.name}}</h2>
+    <img src="{{city.photo}}" alt="City Photo" />
+    <p>{{city.description}}</p>
+  </div>
+    </div>
+    </div>
+
+    
+  <div class="container">
+    <div class="col l6">
+    <div class="card-panel  deep-purple darken-2">
+    <h3>Foreign Language: {{foreignLanguage.language}}</h3>
+    <ul class="collection">
+      {{#each foreignLanguage.phrases}}
+      <li class="collection-item">{{englishPhrase}} - {{foreignLanguage}}</li>
+      {{/each}}
+    </ul>
+  </div>
+   </div>
+   </div>
+ 
+
+  <div class="container">
+    <div class="col l6">
+        <div class="card-panel  deep-purple darken-3">
+    <h3>Favourite Subjects</h3>
+    <ul class="collection">
+      {{#each favouriteSubjects}}
+      <li class="collection-item">
+        <h4>{{name}}</h4>
+        <p>{{description}}</p>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+    </div>
+        </div>
+</div>
+
+<section>
+<div class="card-panel teal lighten-2"><span class="purple-text text-purple darken-1"></span>
+    <a href ="index-boostrap.html">Bootstrap Link</a>
+    <a href ="index.html">Profile Page</a>
+   </div>
+</section>
+</body>
+</html>
