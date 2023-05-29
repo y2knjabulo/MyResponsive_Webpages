@@ -13,7 +13,7 @@
           font-size:1rem; 
           color: whitesmoke;
           font-weight: bold;
-          background-image: url("images\Webp.net-resizeimage_two.jpg");
+          background-image: url("public\Webp.net-resizeimage_two.jpg");
           background-size:cover;
           background-position:center;
           min-height:100vh;
@@ -78,7 +78,7 @@
             </tr>
           </thead>
           <tbody>
-            {{#each data.foreignLanguage.phrases}}
+            {{#each foreignLanguage.phrases}}
             <tr>
               <td>{{data.englishPhrase}}</td>
               <td>{{data.foreignLanguage}}</td>
@@ -96,7 +96,7 @@
             <h3>Favourite Subjects</h3>
           </div>
       <ul>
-        {{#each data.favouriteSubjects}}
+        {{#each favouriteSubjects}}
         <li>
           <h4>{{data.name}}</h4>
           <p>{{data.description}}</p>
