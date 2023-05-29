@@ -34,10 +34,10 @@
     <div class="col-md" >        
         </h2>Full Name</h2>
         <p>
-          {{user.fullName}}
+          {{data.user.fullName}}
         </p>
         <p>
-          <img src="{{user.photo}}" alt="User Photo"/>
+          <img src="{{data.user.photo}}" alt="User Photo"/>
         </p>
     </div>
     </div>    
@@ -47,13 +47,13 @@
           <h2>City to Visit</h2>
         </div>
           <p>
-            {{city.name}}
+            {{data.city.name}}
           </p>
           <p>
-            <img src="{{city.photo}}" alt="City Photo"/>
+            <img src="{{data.city.photo}}" alt="City Photo"/>
           </p>
           <p>
-            {{city.description}}
+            {{data.city.description}}
           </p>
     </div>
       </div>  
@@ -64,13 +64,13 @@
           <h2>Foreign Language To Learn</h2>
         </div>
             <P>
-             {{foreignLanguage.language}}
+             {{data.foreignLanguage.language}}
             </P>
             <p>
-              {{foreignLanguage.description}}
+              {{data.foreignLanguage.description}}
             </p> 
         <table class="responsive-table">
-          <h3>Foreign Language: {{foreignLanguage.language}}</h3>
+          <h3>Foreign Language: {{data.foreignLanguage.language}}</h3>
           <thead>
             <tr>
               <th scope="col">English Phrase</th>
@@ -78,10 +78,10 @@
             </tr>
           </thead>
           <tbody>
-            {{#each foreignLanguage.phrases}}
+            {{#each data.foreignLanguage.phrases}}
             <tr>
-              <td>{{englishPhrase}}</td>
-              <td>{{foreignLanguage}}</td>
+              <td>{{data.englishPhrase}}</td>
+              <td>{{data.foreignLanguage}}</td>
             </tr>
             {{/each}}
           </tbody>
@@ -96,10 +96,10 @@
             <h3>Favourite Subjects</h3>
           </div>
       <ul>
-        {{#each favouriteSubjects}}
+        {{#each data.favouriteSubjects}}
         <li>
-          <h4>{{name}}</h4>
-          <p>{{description}}</p>
+          <h4>{{data.name}}</h4>
+          <p>{{data.description}}</p>
         </li>
         {{/each}}
       </ul>
